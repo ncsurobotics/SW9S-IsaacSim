@@ -1,0 +1,3 @@
+[submodule "deps/zed-isaac-sim"]
+	path = deps/zed-isaac-sim
+	url = https://github.com/stereolabs/zed-isaac-sim.git

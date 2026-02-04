@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="SWIX-sim-v2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00099312 -0.028672 0.03889"
+        rpy="0 0 0" />
+      <mass
+        value="36.07" />
+      <inertia
+        ixx="0.32332"
+        ixy="-2.9424E-06"
+        ixz="-8.6379E-07"
+        iyy="0.14928"
+        iyz="-5.3173E-05"
+        izz="0.37572" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fr_corner">
+    <inertial>
+      <origin
+        xyz="-2.707E-06 -3.6071E-08 0.0075335"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077413" />
+      <inertia
+        ixx="2.2077E-06"
+        ixy="-5.2153E-10"
+        ixz="1.6953E-11"
+        iyy="2.2074E-06"
+        iyz="-1.066E-11"
+        izz="3.2155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fr_corner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fr_corner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_corner_joint"
+    type="continuous">
+    <origin
+      xyz="-0.19482 -0.54281 0.0272"
+      rpy="-1.5708 1.3012 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_corner" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="fl_corner">
+    <inertial>
+      <origin
+        xyz="-2.707E-06 -3.6071E-08 0.0075335"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077413" />
+      <inertia
+        ixx="2.2077E-06"
+        ixy="-5.2153E-10"
+        ixz="1.6953E-11"
+        iyy="2.2074E-06"
+        iyz="-1.066E-11"
+        izz="3.2155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fl_corner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fl_corner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_corner_joint"
+    type="continuous">
+    <origin
+      xyz="0.19482 -0.54281 0.0272"
+      rpy="-1.5708 1.3012 -0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_corner" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="br_corner">
+    <inertial>
+      <origin
+        xyz="-2.707E-06 -3.6071E-08 0.0075335"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077413" />
+      <inertia
+        ixx="2.2077E-06"
+        ixy="-5.2153E-10"
+        ixz="1.6953E-11"
+        iyy="2.2074E-06"
+        iyz="-1.066E-11"
+        izz="3.2155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/br_corner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/br_corner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="br_corner_joint"
+    type="continuous">
+    <origin
+      xyz="-0.18721 0.55042 0.0272"
+      rpy="-1.5708 1.3012 -0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_corner" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="bl_corner">
+    <inertial>
+      <origin
+        xyz="-2.707E-06 -3.6071E-08 0.0075335"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077413" />
+      <inertia
+        ixx="2.2077E-06"
+        ixy="-5.2153E-10"
+        ixz="1.6953E-11"
+        iyy="2.2074E-06"
+        iyz="-1.066E-11"
+        izz="3.2155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/bl_corner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/bl_corner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bl_corner_joint"
+    type="continuous">
+    <origin
+      xyz="0.18721 0.55042 0.0272"
+      rpy="-1.5708 1.3012 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_corner" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="fr_side">
+    <inertial>
+      <origin
+        xyz="-3.6395E-07 5.6639E-07 0.0075331"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077394" />
+      <inertia
+        ixx="2.2071E-06"
+        ixy="-3.3247E-10"
+        ixz="-1.5854E-11"
+        iyy="2.207E-06"
+        iyz="-3.68E-12"
+        izz="3.2146E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fr_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fr_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_side_joint"
+    type="continuous">
+    <origin
+      xyz="-0.20775 -0.3429 0.068878"
+      rpy="0 0 2.872" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_side" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="fl_side">
+    <inertial>
+      <origin
+        xyz="-3.6395E-07 5.6639E-07 0.0075331"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077394" />
+      <inertia
+        ixx="2.2071E-06"
+        ixy="-3.3247E-10"
+        ixz="-1.5854E-11"
+        iyy="2.207E-06"
+        iyz="-3.68E-12"
+        izz="3.2146E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fl_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/fl_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_side_joint"
+    type="continuous">
+    <origin
+      xyz="0.20775 -0.3429 0.068878"
+      rpy="0 0 -0.26956" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_side" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="br_side">
+    <inertial>
+      <origin
+        xyz="-3.6395E-07 5.6639E-07 0.0075331"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077394" />
+      <inertia
+        ixx="2.2071E-06"
+        ixy="-3.3247E-10"
+        ixz="-1.5854E-11"
+        iyy="2.207E-06"
+        iyz="-3.68E-12"
+        izz="3.2146E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/br_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/br_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="br_side_joint"
+    type="continuous">
+    <origin
+      xyz="-0.20775 0.3556 0.068878"
+      rpy="0 0 2.872" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_side" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+  <link
+    name="bl_side">
+    <inertial>
+      <origin
+        xyz="-3.6395E-07 5.6639E-07 0.0075331"
+        rpy="0 0 0" />
+      <mass
+        value="0.0077394" />
+      <inertia
+        ixx="2.2071E-06"
+        ixy="-3.3247E-10"
+        ixz="-1.5854E-11"
+        iyy="2.207E-06"
+        iyz="-3.68E-12"
+        izz="3.2146E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/bl_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://SWIX-sim-v2/meshes/bl_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bl_side_joint"
+    type="continuous">
+    <origin
+      xyz="0.20775 0.3556 0.068878"
+      rpy="0 0 -0.26956" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_side" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.8"
+      velocity="500" />
+    <dynamics
+      damping="4.2E-07"
+      friction="0" />
+  </joint>
+</robot>

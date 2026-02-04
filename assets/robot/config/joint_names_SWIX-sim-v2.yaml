@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'fr_corner_joint', 'fl_corner_joint', 'br_corner_joint', 'bl_corner_joint', 'fr_side_joint', 'fl_side_joint', 'br_side_joint', 'bl_side_joint', ]

@@ -1,0 +1,29 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Isaac Sim / Omniverse caches (common)
+**/.nvidia-omniverse/
+**/omniverse_cache/
+**/cache/
+**/*.cache
+**/*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Large/generated exports (adjust if you want to keep)
+**/output/
+**/runs/
